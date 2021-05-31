@@ -87,15 +87,13 @@ h2, h4 {
 /*Home Page*/
 .frontEnd {
     display: block;
-  margin-left: auto;
-  margin-right: auto;
+ float: right;
   width: 15%;
 }
 
 .backEnd {
     display: block;
-  margin-left: auto;
-  margin-right: auto;
+    float: right;
   margin-top: 20px;
   width: 15%;
   

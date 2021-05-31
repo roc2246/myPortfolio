@@ -7,10 +7,11 @@
 
 
 
-<h2>Areas of Expertise</h2>   
+<h2>Areas of Expertise</h2>
+<div id = "languages">   
 <img class="frontEnd" src="images/languages/html+css+JS.png" alt="HTML 5, CSS3, and JavaScript(ES6)">
 <img class="backEnd" src="images/languages/php+MySQL.png" alt="PHP and MySQL">
-
+</div>
 
 
 </div>
