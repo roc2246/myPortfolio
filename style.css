@@ -11,15 +11,14 @@ body {
 /*Site Header*/
 
 header{
-    border-bottom: solid;
+  border-bottom: solid;
+
 }
 
-header h1{
+header > h1{
     font-size: 48px;
     font-family: Helvetica, arial serif;
-    font-style: italic;
-    color: black;
-    -webkit-text-stroke: 2px white;
+font-weight: lighter;
 
     margin-top: 20px;
 	margin-bottom: 0px;
@@ -27,14 +26,14 @@ header h1{
 
 }
 
-header h4 {
+header > h4 {
     font-size: 20px;
     font-family: arial, serif;
-    color: black;
-    -webkit-text-stroke: 0.50px white;
+    font-weight: lighter;
+
 
     text-align: left;
-    margin-left: 70px;
+    margin-left: 50px;
 	margin-top: 0px;
 }
 
@@ -92,24 +91,40 @@ h2, h4 {
 
 /*Home Page*/
 
+/*About Me*/
+#aboutMe {
+  float: left;
+  margin-left: 150px;
+}
+
+#aboutMe > p{
+  font-family: helvetica;
+  text-align: left;
+  background-color: #030324;
+  border-style: inset;
+  float: left;
+  width: 400px;
+  margin-top: 0px;
+}
+
+#aboutMe > img{
+  border-style: inset;
+  margin-left: 20px;
+}
+
 /*Areas of Expertise*/
 #languages {
   float: right;
+  margin-right: 350px;
 }
 
 #languages > img {
-  margin-left: 10px;
-}
-
-.frontEnd {
   display: block;
-  width: 50%;
+  width: 200px;
 }
 
 .backEnd {
-  display: block;
   margin-top: 20px;
-  width: 50%;
 }
 
 
