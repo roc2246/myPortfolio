@@ -1,6 +1,5 @@
 <?php $pageTitle = "Homepage";?>
 <?php include 'include/header.php';?>
-<?php include 'include/navigation.php';?>
 
 <div id="content">
 <h2>Just Your Friendly Neighborhood Fullstack Developer</h2>
