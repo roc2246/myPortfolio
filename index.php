@@ -22,6 +22,16 @@
 <img class="backEnd" src="images/languages/php+MySQL.png" alt="PHP and MySQL">
 </div>
 
+<div id="projectContainer">
+<h4>Projects</h4>
+<img src="images/projects/after3.png" alt="">
+<p>A mockup site of a travel destination page. Included 
+         are pages for each resort, a randomnly-generated movie of the week, an 
+         AJAX powered quiz, and much more.<br><br>
+         <a href="http://roc09090.classweb.ccv.edu/intro_to_prog/FinalProject/index.php">Check this project out!</a> 
+        </p>
+
+</div>
 
 </div>
 
