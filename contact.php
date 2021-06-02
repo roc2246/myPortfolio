@@ -4,16 +4,16 @@
 <form name="contact" method="post">
 
 
-<label for="email">Email</label><br>
+<label for="email">Email</label>
 <input type="email" name="email">
 <br>
-<label for="subject">Subject</label><br>
+<label for="subject">Subject</label>
 <input type="textbox" name="subject">
 <br>
 <label for="message">Message</label>
 <br>
 <textarea rows="15" cols="45" name="message"></textarea>
-<br><br>
+<br>
 <button type="submit" value="Submit" name="submit" onclick="submitForm()">Submit</button>
 <h4 id="sendMssg"></h4>
 <?php 
