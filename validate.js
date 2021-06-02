@@ -20,7 +20,7 @@ function preventSubmit() {
 
 //Enables form submission
 function enableSubmit() {
-	contact.setAttribute("action", "contact.php");
+	contact.setAttribute("action", "index.php");
 	contact.setAttribute("onsubmit", "return true;");
 }
 
