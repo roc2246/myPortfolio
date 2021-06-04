@@ -11,7 +11,8 @@
     <a href="">LinkedIn</a>
     <a href="">GitHub</a>
 </div>
-<p id="copyright">Copyright 2020</p>
+
 </footer>
+<p id="copyright">Copyright 2020</p>
 </body>
 </html>
