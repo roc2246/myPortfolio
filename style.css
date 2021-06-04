@@ -85,6 +85,7 @@ h2, h4 {
     font-size: 16px;
     font-weight: lighter;
     text-align: center;
+    line-height: 1.2;
 }
 
 /*Home Page*/
@@ -92,7 +93,7 @@ h2, h4 {
 /*About Me*/
 #aboutMe {
   margin: auto;
-  width: 50%;
+  width: 67%;
 }
 
 #aboutMe > p{
@@ -102,14 +103,8 @@ h2, h4 {
   border-style: inset;
   float: left;
   width: 100%;
-  max-width: 50%;
+  max-width: 60%;
   margin-top: 0px;
-}
-
-.para2 {
-  width: 100%;
-  max-width: 50%;
- 
 }
 
 #aboutMe > img{
@@ -119,10 +114,10 @@ h2, h4 {
 
 /*Areas of Expertise*/
 #languages {
-  margin-top: 110px;
+  margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 67%;
 }
 .frontEnd{
   
@@ -134,7 +129,7 @@ h2, h4 {
   margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 66%;
 }
 
 
@@ -145,7 +140,7 @@ h2, h4 {
   border-style: inset;
 
   width: 100%;
-  max-width: 50%;
+  max-width: 64%;
   margin-top: 0px;
   margin-left: 225px;
 }

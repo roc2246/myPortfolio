@@ -7,8 +7,8 @@
 <h4>Your friendly Neighborhood Fullstack Developer</h4>
 <p>I am a fullstack web developer located in beautiful Vermont. For over twenty years, I have spent most of my time 
     outside living the snowboarder life. Not only was I adventurous, but wasa also analytical as well. I always wanted to 
-dissect and break down everything I encoutner in my path. </p>  
-<p class="para2">Ultimately, I turned to web development to satisfy this need. It all started when I began customizing my MySpace page with custom
+dissect and break down everything I encoutner in my path.  
+<br><br>Ultimately, I turned to web development to satisfy this need. It all started when I began customizing my MySpace page with custom
     made HTML and CSS. Eventually, that lkead to me taking more calsses in web development, further solidifying my developer skills. 
     Since then, web development and coding became some of the biggest passions in my life.
 </p> 
