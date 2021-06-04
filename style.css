@@ -106,6 +106,12 @@ h2, h4 {
   margin-top: 0px;
 }
 
+.para2 {
+  width: 100%;
+  max-width: 50%;
+ 
+}
+
 #aboutMe > img{
   border-style: inset;
   margin-left: 20px;
@@ -113,7 +119,7 @@ h2, h4 {
 
 /*Areas of Expertise*/
 #languages {
-  margin-top: 50px;
+  margin-top: 110px;
   margin-left: auto;
   margin-right: auto;
   width: 50%;

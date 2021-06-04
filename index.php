@@ -5,14 +5,13 @@
 
 <div id="aboutMe">
 <h4>Your friendly Neighborhood Fullstack Developer</h4>
-<p>I am an AASI Level 3 certified snowboard instructor 
-    looking to join Woodward Copper’s team of summer
-     snowboard coaches. I have taught guests of all 
-     ages and ability levels over the eight seasons 
-     that I have been coaching. Coaching park and 
-     freestyle riding is one of my areas of expertise
-      as a coach. Whenever there is a need for a park
-       lesson, I am always the one who takes charge. </p>   
+<p>I am a fullstack web developer located in beautiful Vermont. For over twenty years, I have spent most of my time 
+    outside living the snowboarder life. Not only was I adventurous, but wasa also analytical as well. I always wanted to 
+dissect and break down everything I encoutner in my path. </p>  
+<p class="para2">Ultimately, I turned to web development to satisfy this need. It all started when I began customizing my MySpace page with custom
+    made HTML and CSS. Eventually, that lkead to me taking more calsses in web development, further solidifying my developer skills. 
+    Since then, web development and coding became some of the biggest passions in my life.
+</p> 
 <img src="images/euroCarve.jpg">
 </div>
 
