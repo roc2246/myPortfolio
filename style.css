@@ -101,7 +101,8 @@ h2, h4 {
   background-color: #030324;
   border-style: inset;
   float: left;
-  width: 400px;
+  width: 100%;
+  max-width: 50%;
   margin-top: 0px;
 }
 
@@ -137,7 +138,8 @@ h2, h4 {
   background-color: #030324;
   border-style: inset;
 
-  width: 440px;
+  width: 100%;
+  max-width: 50%;
   margin-top: 0px;
   margin-left: 225px;
 }
@@ -163,8 +165,8 @@ footer {
   font-family: helvetica;
   float: left;
   margin-left: 450px;
-  width: 50%;
-  max-width: 200px;
+  width: 15%;
+  max-width: 15%;
 }
 
 #socialMedia{
@@ -182,7 +184,8 @@ footer {
 
 form{
   margin-right: 75px;
-  width: 225px;
+  width: 10%;
+  min-width: 200px;
   margin-right: 350px;
   float: right; 
 }
@@ -220,7 +223,7 @@ input[type=submit] {
 }
 
 form > h4{
-  width: 250px;
+  width: 50%;
 }
 
 .container {
