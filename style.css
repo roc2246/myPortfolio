@@ -1,29 +1,22 @@
 body {
     background-color: black;
-
     color: white ;
-
-  
-	font-family: "Times New Roman", "Centabel Book", serif;
 	font-size: 14pt;
 }
 
 /*Site Header*/
-
 header{
   border-bottom: solid;
-
 }
 
 header > h1{
     font-size: 48px;
     font-family: Helvetica, arial serif;
-font-weight: lighter;
+    font-weight: lighter;
 
     margin-top: 20px;
-	margin-bottom: 0px;
-	margin-left: 15px;
-
+  	margin-bottom: 0px;
+  	margin-left: 15px;
 }
 
 header > h4 {
@@ -31,22 +24,11 @@ header > h4 {
     font-family: arial, serif;
     font-weight: lighter;
 
-
     text-align: left;
     margin-left: 50px;
-	margin-top: 0px;
+  	margin-top: 0px;
 }
 
-/*Navigation*/
-nav {
-    height: 100%;
-    position: absolute;
-    
-    padding-right: 10px;
-    padding-top: 23px;
-
-    border-right: solid;
-}
 
 /*Links*/
 a {
@@ -63,10 +45,6 @@ a:hover {
 }
 
 /*Main Content*/
-#content {
-	margin-left: 180px;
-	margin-right: auto;
-}
 
 h2 {
     font-family: helvetica, arial, sans-serif;
@@ -81,75 +59,26 @@ h2, h4 {
 
 }
 
-#content p {
-    font-size: 16px;
-    font-weight: lighter;
-    text-align: center;
-    line-height: 1.2;
-}
-
-/*Home Page*/
-
 /*About Me*/
-#aboutMe {
-  margin: auto;
-  width: 67%;
-}
-
-#aboutMe > p{
+#main{
   font-family: helvetica;
   text-align: left;
   background-color: #030324;
   border-style: inset;
-  float: left;
-  width: 100%;
-  max-width: 60%;
-  margin-top: 0px;
 }
 
-#aboutMe > img{
+#ec{
   border-style: inset;
-  margin-left: 20px;
 }
 
 /*Areas of Expertise*/
-#languages {
-  margin-top: 50px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 67%;
-}
+
 .frontEnd{
   
   margin-left: 20px;
 }
 
 /*Projects*/
-#projectContainer{
-  margin-top: 50px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 66%;
-}
-
-
-#projectContainer > p{
-  font-family: helvetica;
-  text-align: left;
-  background-color: #030324;
-  border-style: inset;
-
-  width: 100%;
-  max-width: 64%;
-  margin-top: 0px;
-  margin-left: 225px;
-}
-
-#projectContainer > img{
-float: left;
-margin-top: -75px;
-margin-left: -30px;
-}
 
 /*footer*/
 footer {
@@ -162,13 +91,6 @@ footer {
   height: 475px;
 }
 
-
-#socialMedia{
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: -362px;
-  width: 25%;
-}
 
 #copyright{
   font-family: helvetica;

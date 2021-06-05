@@ -1,5 +1,5 @@
 
-<h2>For all job related inquiries, send me a message below:</h2>
+
 
 <form name="contact" method="post">
 
