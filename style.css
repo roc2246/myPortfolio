@@ -162,17 +162,12 @@ footer {
   height: 475px;
 }
 
-#C2A {
-  font-family: helvetica;
-  float: left;
-  margin-left: 450px;
-  width: 15%;
-  max-width: 15%;
-}
 
 #socialMedia{
-  float: right;
-  margin-right: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -362px;
+  width: 25%;
 }
 
 #copyright{
@@ -184,11 +179,11 @@ footer {
 /*Form*/
 
 form{
-  margin-right: 75px;
   width: 10%;
   min-width: 200px;
-  margin-right: 350px;
-  float: right; 
+  margin-left: auto;
+  margin-right: 680px;
+  
 }
 
 label{
