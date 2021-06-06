@@ -28,7 +28,7 @@ function enableSubmit() {
 function loadMssg(){
 
 	if (document.readyState !== "loading") {
-		document.getElementById("sendMssg").innerHTML="Email is sending, please wait.";
+		document.getElementById("sendMssg").innerHTML="Sending...";
 		} else{
 		document.getElementById("sendMssg").style.visibility="hidden";
 		}
