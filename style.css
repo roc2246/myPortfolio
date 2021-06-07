@@ -71,15 +71,6 @@ h2, h4 {
   border-style: inset;
 }
 
-/*Areas of Expertise*/
-
-.frontEnd{
-  
-  margin-left: 20px;
-}
-
-/*Projects*/
-
 /*footer*/
 footer {
   border-top: solid;
@@ -87,8 +78,6 @@ footer {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-
-  height: 475px;
 }
 
 
@@ -101,11 +90,8 @@ footer {
 /*Form*/
 
 form{
-  width: 10%;
-  min-width: 200px;
-  margin-left: auto;
-  margin-right: 680px;
-  
+min-width: 50%;
+max-width: 80%;  
 }
 
 label{
