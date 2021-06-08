@@ -21,7 +21,7 @@
  
     <div class="row justify-content-center">
     <a href="http://www.linkedin.com/in/riley-childs-4b015b1a4"><img src="images/socialMedia/linkedIn.png" alt="LinkedIn"></a>
-    <a href=""><img src="images/socialMedia/gitHub.png" alt="gitHub"></a>
+    <a href="https://github.com/roc2246"><img src="images/socialMedia/gitHub.png" alt="gitHub"></a>
   </div>
 </div>
 
