@@ -4,7 +4,7 @@
 <div id="content">
 <h2>Analytical, Pragmatic, Seeking the Next Thrill</h2>
 <img id="carveImg" src="images/" alt="">
-<p></p>
+<p>dedgf</p>
 
 
 <?php include "include/footer.php"?>
