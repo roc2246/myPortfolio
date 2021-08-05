@@ -55,6 +55,14 @@
          <a href="http://roc09090.classweb.ccv.edu/intro_to_prog/FinalProject/index.php">Check this project out!</a> 
         </p>
 </div>
+<div class="col-sm-2.5">
+<img src="images/projects/theCondo.png" alt="After 3">
+</div>
+<div class="col-sm-9">
+<p id="main">An eCommerce site that sells snowboarding softgoods and hardgoods.<br><br>
+         <a href="">Check this project out!</a> 
+        </p>
+</div>
 </div>
 
 </div>
