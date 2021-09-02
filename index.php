@@ -5,6 +5,7 @@
 <h2 class = "fade-in">Welcome</h2>
 
 <ul id="selections">
+<<<<<<< HEAD
   <li onclick="toggleOption(0);">About Me</li><br>
   <li onclick="toggleOption(1);">Areas of Expertise</li><br>
   <li onclick="toggleOption(2);">Projects</li><br>
@@ -12,6 +13,15 @@
 </ul>
 
 <div class="selected-option" style="display: none;">
+=======
+  <li>About Me</li><br>
+  <li>Areas of Expertise</li><br>
+  <li>Projects</li><br>
+  <li><a href="#contact">Contact Me</a></li><br>
+</ul>
+
+<div class="selected-option" hidden>
+>>>>>>> 14a95a16152bc5897ef923937b0e43263dbbbe42
 <div class="row">
     <div class="page-header">
         <h4>Your friendly Neighborhood Fullstack Developer</h4>
@@ -34,7 +44,11 @@
 </div>
 </div>
 
+<<<<<<< HEAD
 <div class="selected-option"  style="display: none;">
+=======
+<div class="selected-option" hidden>
+>>>>>>> 14a95a16152bc5897ef923937b0e43263dbbbe42
   <div class="row justify-content-center  mt-3">  
     <div class="page-header">
       <h4>Areas of Expertise</h4> 
@@ -84,6 +98,7 @@
 
 </div>
 <script>
+<<<<<<< HEAD
 var option = document.getElementsByClassName("selected-option");
 
 const toggleOption = (k) =>{
@@ -92,6 +107,16 @@ const toggleOption = (k) =>{
     }else{
       option[k].setAttribute("style", "display: none;");
     }
+=======
+var k = -1;
+
+const selectedOption = document.getElementsByTagName("li");
+for(let i = 0; i<=selectedOption.length; i++){
+  selectedOption[i].addEventListener("click", () =>{
+      k++;
+    document.getElementsByClassName("selected-option")[k].removeAttribute("hidden");
+  });
+>>>>>>> 14a95a16152bc5897ef923937b0e43263dbbbe42
 }
 
 
