@@ -3,7 +3,7 @@
 
 <div class="container-fluid">
 <div class="page-header mt-2">
-<h2>Get in Touch with Me:</h2>
+<h2 id="contact">Get in Touch with Me:</h2>
 </div>
     <div class="row justify-content-center">
 
