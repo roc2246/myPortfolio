@@ -34,6 +34,7 @@
 </div>
 </div>
 
+
 <div class="selected-option"  style="display: none;">
   <div class="row justify-content-center  mt-3">  
     <div class="page-header">
@@ -92,7 +93,6 @@ const toggleOption = (k) =>{
     }else{
       option[k].setAttribute("style", "display: none;");
     }
-}
 
 
 
