@@ -85,9 +85,9 @@
 
 </div>
 <script>
-var option = document.getElementsByClassName("selected-option");
+const option = document.getElementsByClassName("selected-option");
 
-let toggleOption = (k) =>{
+const toggleOption = (k) =>{
  if(option[k].style.display == 'none'){
   option[k].removeAttribute("style");
     }else{
