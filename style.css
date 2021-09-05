@@ -44,12 +44,7 @@ a:hover {
 	color: whitesmoke;
 }
 
-/*First Background*/
-#main-content{
-  background-image: url("images/bridge.jpg"); 
-  height: 800px;
-}
-
+/*Animations*/
 .fade-in {
   animation: fadeIn ease 10s;
   -webkit-animation: fadeIn ease 10s;
@@ -102,6 +97,7 @@ a:hover {
   }
 }
 
+
 /*Main Content*/
 
 h2 {
@@ -117,17 +113,70 @@ h2, h4 {
 
 }
 
-/*About Me*/
-#main{
+.paragraph-main{
   font-family: helvetica;
   text-align: left;
   background-color: #030324;
   border-style: inset;
+  margin-left: 10px;
+  padding: 5px;
+}
+
+#main-content{
+  display: flex;
+  flex-direction: row;
+  height: 800px;
+  margin-right: 30px;
+}
+
+/*Navigation*/
+#selections {
+  margin: 10px;
+  padding: 20px;
+  min-width: 200px;
+}
+
+.selected-content{
+  margin: 10px;
+  padding: 20px;
+}
+
+/*Scrollbar*/
+.scroll{
+  overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+
+/*About Me*/
+#aboutme {
+  display: flex;
+  flex-direction: column;
+}
+
+.second-row{
+  display: flex;
+  flex-direction: row;
 }
 
 #ec{
+  width: 240px;
+  height: 143px;
   border-style: inset;
 }
+
+/*Projects*/
+.project{
+  display: flex;
+  flex-direction: row;
+}
+
+.project-image{
+  width: 240px;
+  height: 79px;
+}
+
 
 /*footer*/
 footer {
