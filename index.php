@@ -6,10 +6,10 @@
 
 <nav>
   <ul id="selections" style="list-style-type:none;">
-    <li onclick="toggleOption(0, 1, 2);">About Me</li>
-    <li onclick="toggleOption(1, 0, 2);">Areas of Expertise</li>
-    <li onclick="toggleOption(2, 0, 1);">Projects</li>
-    <li><a href="#contact">Contact Me</a></li>
+    <li onclick="toggleOption(0, 1, 2, 3);">About Me</li>
+    <li onclick="toggleOption(1, 0, 2, 3);">Areas of Expertise</li>
+    <li onclick="toggleOption(2, 0, 1, 3);">Projects</li>
+    <li onclick="toggleOption(3, 0, 1, 2);">Contact Me</li>
   </ul>
 </nav>
 
@@ -53,15 +53,70 @@
 </div>
 
 
+<!--Delete once content gets bigger-->
+<div class="selected-option"  style="display: none;">
+<div class="container-fluid">
+<div class="page-header mt-2">
+<h4>Get in Touch with Me:</h4>
+</div>
+<div class="row justify-content-center">
+  <form name="contact" method="post">
+    <label for="email">Email</label>
+    <input type="email" name="email">
+    <br>
+    <label for="subject">Subject</label>
+    <input type="textbox" name="subject">
+    <br>
+    <label for="message">Message</label>
+    <br>
+    <textarea rows="15" cols="45" name="message"></textarea>
+    <br>
+    <button type="submit" value="Submit" name="submit" onclick="submitForm()">Submit</button>
+    <h4 id="sendMssg"></h4>
+    <?php 
+    if(isset($_POST['submit'])){
+        $email = $_POST['email'];
+        $subject = $_POST['subject'];
+        $msg = $_POST['message']; 
+        $msg = wordwrap($msg, 70);    
+
+        $mailTo = "riley.childs@yahoo.com";
+        $headers = "From: ". $email . "\r\n";
+
+        mail($mailTo, $subject, $msg, $headers);
+        echo "<h4 id='sent'>Email Sent</h4>";
+    }
+    ?>
+  </form>
+  <script src = "validate.js"></script>
+</div>
+
+
+    <div class="row justify-content-center">  
+     <div class="page-header">
+    <h4>Social Media</h4>
+    </div>
+    </div>
+ 
+    <div class="row justify-content-center">
+    <a href="http://www.linkedin.com/in/riley-childs-4b015b1a4"><img src="images/socialMedia/linkedIn.png" alt="LinkedIn"></a>
+    <a href="https://github.com/roc2246"><img src="images/socialMedia/gitHub.png" alt="gitHub"></a>
+  </div>
+
+</div>
+</div>
+
+
 </div>
 <script>
 const option = document.getElementsByClassName("selected-option");
 
-const toggleOption = (k, os1, os2) =>{
+const toggleOption = (k, os1, os2, os3) =>{
  if(option[k].style.display == 'none'){
   option[k].removeAttribute("style");
   option[os1].setAttribute("style", "display: none;");
   option[os2].setAttribute("style", "display: none;");
+  option[os3].setAttribute("style", "display: none;");
     }else{
       option[k].setAttribute("style", "display: none;");
     }
@@ -70,7 +125,6 @@ const toggleOption = (k, os1, os2) =>{
   
 
 </script>
-
 
 
 <?php include "include/footer.php"?>

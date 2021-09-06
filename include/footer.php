@@ -1,7 +1,8 @@
 <footer>
 
-
+<!--Remove uncommented comments once content gets bigger-->
 <div class="container-fluid">
+  <!--
 <div class="page-header mt-2">
 <h2 id="contact">Get in Touch with Me:</h2>
 </div>
@@ -9,7 +10,7 @@
 
 
 <div class="col-sm-4">
-<?php include 'contact.php'; ?>
+<?php //include 'contact.php'; ?>
 </div>
 
 <div class="col-sm-1.5">
@@ -27,11 +28,12 @@
 
 </div>
 <div class="row mt-4">
+-->
 <div class="col-sm-12">
 <p id="copyright">Copyright 2021</p>
 </div>
 </div>
-</div>
+<!--</div>-->
 </footer>
 </body>
 </html>
