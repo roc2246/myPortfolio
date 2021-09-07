@@ -1,17 +1,19 @@
 <?php $pageTitle = "Fullstack Developer";?>
 <?php include 'include/header.php';?>
-<h2 class = "fade-in">Welcome</h2>
-
 <div id="main-content">
-
+<h2 class = "fade-in1">Make a selection, get to know me better</h2>
 <nav>
-  <ul id="selections" style="list-style-type:none;">
+  <ul style="list-style-type:none;">
     <li onclick="toggleOption(0, 1, 2, 3);">About Me</li>
     <li onclick="toggleOption(1, 0, 2, 3);">Areas of Expertise</li>
     <li onclick="toggleOption(2, 0, 1, 3);">Projects</li>
     <li onclick="toggleOption(3, 0, 1, 2);">Contact Me</li>
   </ul>
 </nav>
+
+<div id="blank-space">
+<h4 class = "fade-in2">What would you like to know about me?</h4>
+</div>
 
 <div class="selected-option" id="aboutme" style="display: none;">
   <h4>Your friendly Neighborhood Fullstack Developer</h4>
@@ -28,14 +30,12 @@
 </div>
 
 <div class="selected-option"  style="display: none;">
-      <h4>Areas of Expertise</h4>
-      <img class="languages" src="images/languages/php+MySQL.png" alt="PHP and MySQL">
-      <img class="languages" style="margin-left: 20px;" src="images/languages/html+css+JS.png" alt="HTML 5, CSS3, and JavaScript(ES6)">
+      <img class="languages" width="240" height="127" src="images/languages/php+MySQL.png" alt="PHP and MySQL">
+      <img class="languages" width="250" height="94" style="margin-left: 20px;" src="images/languages/html+css+JS.png" alt="HTML 5, CSS3, and JavaScript(ES6)">
 </div>
 
 
 <div class="selected-option"  style="display: none;">
-      <h4>Projects</h4>
   <div class="project">
       <img class="project-image" src="images/projects/after3.png" alt="After 3">
   <p class="paragraph-main">A mockup site of a travel destination page. Included 
@@ -56,9 +56,7 @@
 <!--Delete once content gets bigger-->
 <div class="selected-option"  style="display: none;">
 <div class="container-fluid">
-<div class="page-header mt-2">
-<h4>Get in Touch with Me:</h4>
-</div>
+
 <div class="row justify-content-center">
   <form name="contact" method="post">
     <label for="email">Email</label>
@@ -84,7 +82,8 @@
         $headers = "From: ". $email . "\r\n";
 
         mail($mailTo, $subject, $msg, $headers);
-        echo "<h4 id='sent'>Email Sent</h4>";
+        //echo "<h4 id='sent'>Email Sent</h4>";
+        echo "<script>alert('Email has been sent');</script>";
     }
     ?>
   </form>
@@ -106,18 +105,19 @@
 </div>
 </div>
 
-
 </div>
 <script>
 const option = document.getElementsByClassName("selected-option");
 
 const toggleOption = (k, os1, os2, os3) =>{
  if(option[k].style.display == 'none'){
+   document.getElementById("blank-space").setAttribute("style", "display: none;");
   option[k].removeAttribute("style");
   option[os1].setAttribute("style", "display: none;");
   option[os2].setAttribute("style", "display: none;");
   option[os3].setAttribute("style", "display: none;");
     }else{
+   document.getElementById("blank-space").removeAttribute("style");
       option[k].setAttribute("style", "display: none;");
     }
   }
