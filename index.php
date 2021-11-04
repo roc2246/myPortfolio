@@ -1,13 +1,13 @@
 <?php $pageTitle = "Fullstack Developer";?>
 <?php include 'include/header.php';?>
-<div id="main-content">
+<main>
 <h2 class = "fade-in1">Make a selection, get to know me better</h2>
 <nav>
   <ul style="list-style-type:none;">
-    <li onclick="toggleOption(0, 1, 2, 3);">About Me</li>
-    <li onclick="toggleOption(1, 0, 2, 3);">Areas of Expertise</li>
-    <li onclick="toggleOption(2, 0, 1, 3);">Projects</li>
-    <li onclick="toggleOption(3, 0, 1, 2);">Contact Me</li>
+    <li style="cursor: pointer;" onclick="toggleOption(0, 1, 2, 3);">About Me</li>
+    <li style="cursor: pointer;" onclick="toggleOption(1, 0, 2, 3);">Areas of Expertise</li>
+    <li style="cursor: pointer;" onclick="toggleOption(2, 0, 1, 3);">Projects</li>
+    <li style="cursor: pointer;" onclick="toggleOption(3, 0, 1, 2);">Contact Me</li>
   </ul>
 </nav>
 
@@ -41,13 +41,24 @@
   <p class="paragraph-main">A mockup site of a travel destination page. Included 
          are pages for each resort, a randomnly-generated movie of the week, an 
          AJAX powered quiz, and much more.<br><br>
-         <a href="http://roc09090.classweb.ccv.edu/intro_to_prog/FinalProject/index.php">Check this project out!</a> 
+         <a href="http://roc09090.classweb.ccv.edu/intro_to_prog/FinalProject/index.php">Check this project out!</a>  <br>
+         <a href="https://github.com/roc2246/after3">Source Code</a> 
         </p>
   </div>
   <div class="project">
   <img class="project-image" src="images/projects/theCondo.png" alt="The Condo">
   <p class="paragraph-main">An eCommerce site that sells snowboarding softgoods and hardgoods.<br><br>
-         <a href="http://roc09090.classweb.ccv.edu/eCommerce/">Check this project out!</a> 
+         <a href="http://roc09090.classweb.ccv.edu/eCommerce/">Check this project out!</a>  <br>
+         <a href="https://github.com/roc2246/eCommerceMockup">Source Code</a> 
+        </p>
+  </div>
+  <div class="project">
+    <!--Image below shirngs if .project-image is applied-->
+  <img  src="images/projects/reCRUD.png" alt="Real Estate App">
+  <p class="paragraph-main">A web application that consumes a self-coded real esate api. CRUD 
+        features are used to manage the listings.<br><br>
+         <a href="">Check this project out!</a> <br>
+         <a href="https://github.com/roc2246/real_estate">Source Code</a> 
         </p>
   </div>
 </div>
@@ -105,7 +116,7 @@
 </div>
 </div>
 
-</div>
+  </main>
 <script>
 const option = document.getElementsByClassName("selected-option");
 

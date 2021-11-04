@@ -7,6 +7,7 @@ body {
 /*Site Header*/
 header{
   border-bottom: solid;
+  padding-bottom: 20px;
 }
 
 header > h1{
@@ -175,10 +176,12 @@ h2, h4 {
   padding: 5px;
 }
 
-#main-content{
+main{
   display: flex;
   flex-direction: column;
   justify-content:center;
+
+  padding-top: 20px;
 }
 
 #blank-space{
@@ -216,7 +219,7 @@ li:hover{
   margin-right: auto;
   margin-top: 20px;
   min-width: 200px;
-  max-width: 600px;
+  max-width: 1000px;
   min-height: 650px;
 }
 
@@ -254,6 +257,7 @@ li:hover{
 .project{
   display: flex;
   flex-direction: row;
+  margin-bottom: 20px;
 }
 
 .project-image{
@@ -268,6 +272,7 @@ footer {
  /*margin-top: 50px;*/
   margin-left: auto;
   margin-right: auto;
+  margin-top: 10px;
   width: 100%;
 }
 
