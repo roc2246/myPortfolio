@@ -260,9 +260,16 @@ li:hover{
   margin-bottom: 20px;
 }
 
-.project-image{
+.project-image, .not-project-image{
   width: 240px;
   height: 79px;
+
+  border-style: inset;
+  border-color: white;
+}
+
+.not-project-image{
+  height: 212px;
 }
 
 

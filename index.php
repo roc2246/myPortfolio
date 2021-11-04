@@ -54,7 +54,7 @@
   </div>
   <div class="project">
     <!--Image below shirngs if .project-image is applied-->
-  <img  src="images/projects/reCRUD.png" alt="Real Estate App">
+  <img class="not-project-image" src="images/projects/reCRUD.png" alt="Real Estate App">
   <p class="paragraph-main">A web application that consumes a self-coded real esate api. CRUD 
         features are used to manage the listings.<br><br>
          <a href="">Check this project out!</a> <br>
