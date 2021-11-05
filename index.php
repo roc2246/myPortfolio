@@ -80,7 +80,7 @@
     <br>
     <textarea rows="15" cols="45" name="message"></textarea>
     <br>
-    <button type="submit" value="Submit" name="submit" onclick="submitForm()">Submit</button>
+    <button type="submit" value="Submit" name="submit" onclick="submitForm(contact, 'index.php')">Submit</button>
     <h4 id="sendMssg"></h4>
     <?php 
     if(isset($_POST['submit'])){
