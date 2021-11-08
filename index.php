@@ -131,10 +131,10 @@
       option[os2].setAttribute("style", "display: none;");
       option[os3].setAttribute("style", "display: none;");
 
-      navItem[k+1].style.backgroundColor = "grey";
-      navItem[os1+1].style.backgroundColor = "none";
-      navItem[os2+1].style.backgroundColor = "none";
-      navItem[os3+1].style.backgroundColor = "none";
+      navItem[k+1].setAttribute("style", "cursor: pointer; background-color: grey;");
+      navItem[os1+1].setAttribute("style", "cursor: pointer; background-color: none;");
+      navItem[os2+1].setAttribute("style", "cursor: pointer; background-color: none;");
+      navItem[os3+1].setAttribute("style", "cursor: pointer; background-color: none;");
     }
   }
 
