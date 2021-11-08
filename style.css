@@ -1,4 +1,4 @@
-body {
+body, li>a/*For home link*/ {
     background-color: black;
     color: white ;
 	font-size: 14pt;
@@ -154,7 +154,7 @@ li{
   margin-left: 20px;
 }
 
-li:hover{
+li:hover, li>a:hover/*For home link*/{
   background-color: grey;
 }
 

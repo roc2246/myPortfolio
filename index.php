@@ -5,6 +5,7 @@
   <h2 class = "fade-in">Make a selection, get to know me better</h2>
   <nav>
     <ul style="list-style-type:none;">
+      <li><a style="text-decoration: none;" href = "index.php">Home</a></li>
       <li style="cursor: pointer;" onclick="toggleOption(0, 1, 2, 3);">About Me</li>
       <li style="cursor: pointer;" onclick="toggleOption(1, 0, 2, 3);">Areas of Expertise</li>
       <li style="cursor: pointer;" onclick="toggleOption(2, 0, 1, 3);">Projects</li>
@@ -116,17 +117,24 @@
 
 <script>
   const option = document.getElementsByClassName("selected-option");
+  const navItem = document.getElementsByTagName("li");
 
   function toggleOption (k, os1, os2, os3){
+    
     if(option[k].style.display == 'none'){
+      //Line below is for changing URL on nav click
+      //window.history.pushState('', 'New Page Title', '/new-url.php');
       document.getElementById("main-space").setAttribute("style", "display: none;");
+     
       option[k].removeAttribute("style");
       option[os1].setAttribute("style", "display: none;");
       option[os2].setAttribute("style", "display: none;");
       option[os3].setAttribute("style", "display: none;");
-    }else{
-      document.getElementById("main-space").removeAttribute("style");
-      option[k].setAttribute("style", "display: none;");
+
+      navItem[k+1].style.backgroundColor = "grey";
+      navItem[os1+1].setAttribute("style", "background-color: none;");
+      navItem[os2+1].setAttribute("style", "background-color:: none;");
+      navItem[os3+1].setAttribute("style", "background-color: none;");
     }
   }
 
