@@ -33,16 +33,22 @@
   </div>
 
   <!--Areas of Expertise-->
-  <div class="selected-option"  style="display: none;">
-    <img class="languages" width="240" height="127" src="images/languages/php+MySQL.png" alt="PHP and MySQL">
-    <img class="languages" width="250" height="94" style="margin-left: 20px;" src="images/languages/html+css+JS.png" alt="HTML 5, CSS3, and JavaScript(ES6)">
+  <!--Image sources: https://devicon.dev/-->
+  <div class="selected-option"  id="areas-of-expertise" style="display: none;">
+    <img class="language" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg" />
+    <img class="language" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg" />
+    <img class="language" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" />
+    <img class="language" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" />
+    <img class="language" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-plain.svg" />
+
   </div>
 
   <!--Projects-->
-  <div class="selected-option"  style="display: none;">
+  <div class="selected-option"  id="projects" style="display: none;">
     <div class="project">
-      <img class="project-image" src="images/projects/after3.png" alt="After 3">
-      <p class="paragraph-main">A mockup site of a travel destination page. Included 
+      <p class="paragraph-main">
+      <img class="project-image" src="images/projects/after3.png" alt="After 3">  
+      A mockup site of a travel destination page. Included 
         are pages for each resort, a randomnly-generated movie of the week, an 
         AJAX powered quiz, and much more.<br><br>
         <a href="http://roc09090.classweb.ccv.edu/intro_to_prog/FinalProject/index.php">Check this project out!</a>  <br>
@@ -50,16 +56,17 @@
       </p>
     </div>
     <div class="project">
-      <img class="project-image" src="images/projects/theCondo.png" alt="The Condo">
-      <p class="paragraph-main">An eCommerce site that sells snowboarding softgoods and hardgoods.<br><br>
+      <p class="paragraph-main">
+        <img class="project-image" src="images/projects/theCondo.png" alt="The Condo">
+        An eCommerce site that sells snowboarding softgoods and hardgoods.<br><br>
         <a href="http://roc09090.classweb.ccv.edu/eCommerce/">Check this project out!</a>  <br>
         <a href="https://github.com/roc2246/eCommerceMockup">Source Code</a> 
       </p>
     </div>
     <div class="project">
-      <!--Image below shirnks if .project-image is applied-->
-      <img class="not-project-image" src="images/projects/reCRUD.png" alt="Real Estate App">
-      <p class="paragraph-main">A web application that consumes a self-coded real esate api. CRUD 
+      <p class="paragraph-main">
+        <img class="shortest-project-image" src="images/projects/reCRUD.png" alt="Real Estate App">
+        A web application that consumes a self-coded real esate api. CRUD 
         features are used to manage the listings.<br><br>
         <a href="">Check this project out!</a> <br>
         <a href="https://github.com/roc2246/real_estate">Source Code</a> 

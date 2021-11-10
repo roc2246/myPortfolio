@@ -196,34 +196,53 @@ li:hover, li>a:hover/*For home link*/{
 }
 
 /*Areas of Expertise*/
-.languages{
-  margin-bottom: 20px;
+#areas-of-expertise{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.language{
+  width: 200px;
+  height: 100px;
 }
 
 /*Projects*/
-.project{
+#projects{
   display: flex;
   flex-direction: row;
-  margin-bottom: 20px;
+  flex-wrap: wrap;
 }
 
-.project-image, .not-project-image{
+.project{
+  width: 240px;
+  margin: 20px;
+}
+
+.project-image{
   width: 240px;
   height: 79px;
-
-  border-style: inset;
-  border-color: white;
+  margin: 10px;
 }
 
-.not-project-image{
-  height: 212px;
+.shortest-project-image{
+  width: 207px;
+  height: 29px;
+  margin: 10px;
 }
+
+.project-image, .shortest-project-image{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
 
 
 /*footer*/
 footer {
   border-top: solid;
- /*margin-top: 50px;*/
   margin-left: auto;
   margin-right: auto;
   margin-top: 10px;
@@ -235,60 +254,8 @@ footer {
   font-family: helvetica;
   width: 100%;
   position: absolute;
-  /*border-top: .5px solid;*/
 }
 
-/*Uncomment once content expands*/
-/*Form(FOOTER)*/
-
-/*form{
-min-width: 50%;
-max-width: 80%;  
-}
-
-label{
-  font-family: helvetica, arial, serif;
-}
-
-input[type=email], input[type=textbox] {
-  height: 20px;
-}
-
-textarea{
-  height: 125px;
-}
-
-input[type=email], input[type=textbox], textarea {
-  
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
- 
-}
-
-input[type=submit] {
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-form > h4{
-  width: 50%;
-}
-
-.container {
-  padding: 20px;
-}*/
-
-
-/*Delete once content expands*/
-/*Form(Main Content)*/
 
 form{
  width: 100%;
