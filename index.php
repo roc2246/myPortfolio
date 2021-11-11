@@ -51,7 +51,12 @@
       A mockup site of a travel destination page. Included 
         are pages for each resort, a randomnly-generated movie of the week, an 
         AJAX powered quiz, and much more.<br><br>
-        <a href="http://roc09090.classweb.ccv.edu/intro_to_prog/FinalProject/index.php">Check this project out!</a>  <br>
+        <a href=
+        <?php if($_SERVER['HTTP_HOST'] == 'roc09090.classweb.ccv.edu'){
+            echo "http://roc09090.classweb.ccv.edu/intro_to_prog/FinalProject/index.php";
+          }else{
+            echo "http://wh963069.ispot.cc/projects/after3/index.php";
+          }?>>Check this project out!</a> <br>
         <a href="https://github.com/roc2246/after3">Source Code</a> 
       </p>
     </div>
