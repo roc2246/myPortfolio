@@ -101,7 +101,7 @@ a:hover {
 
 /*Main Content*/
 
-h2 {
+h2, #main-space>h4 {
     font-family: helvetica, arial, sans-serif;
     font-weight: lighter;
 
@@ -145,6 +145,10 @@ nav{
 }
 
 ul{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   border-bottom: solid;
   padding: 10px;
 }
@@ -154,7 +158,7 @@ li{
   margin-left: 20px;
 }
 
-li:hover, li>a:hover/*For home link*/{
+li:hover{
   background-color: grey;
 }
 
@@ -200,6 +204,7 @@ li:hover, li>a:hover/*For home link*/{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .language{
@@ -212,6 +217,7 @@ li:hover, li>a:hover/*For home link*/{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .project{

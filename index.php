@@ -5,7 +5,7 @@
   <h2 class = "fade-in">Make a selection, get to know me better</h2>
   <nav>
     <ul style="list-style-type:none;">
-      <li><a style="text-decoration: none;" href = "index.php">Home</a></li>
+      <li id="home-link"><a style="text-decoration: none;" href = "index.php">Home</a></li>
       <li style="cursor: pointer;" onclick="toggleOption(0, 1, 2, 3);">About Me</li>
       <li style="cursor: pointer;" onclick="toggleOption(1, 0, 2, 3);">Areas of Expertise</li>
       <li style="cursor: pointer;" onclick="toggleOption(2, 0, 1, 3);">Projects</li>
@@ -165,6 +165,14 @@
     if (window.history.replaceState) {
       window.history.replaceState( null, null, window.location.href );
     }
+
+  //Keeps both #home-link and <a> child element highlighted on mouse hover
+  const homeLink = document.getElementById("home-link");
+  const homeLinkChild = document.getElementsByTagName("a")[0];
+  homeLink.addEventListener("mouseover", () => homeLinkChild.style.backgroundColor = "grey");
+  homeLink.addEventListener("mouseleave", () => homeLinkChild.style.backgroundColor = "");
+  
+  
 </script>
 
 <?php include "include/footer.php"?>
