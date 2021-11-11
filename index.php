@@ -59,7 +59,12 @@
       <p class="paragraph-main">
         <img class="project-image" src="images/projects/theCondo.png" alt="The Condo">
         An eCommerce site that sells snowboarding softgoods and hardgoods.<br><br>
-        <a href="http://roc09090.classweb.ccv.edu/eCommerce/">Check this project out!</a>  <br>
+        <a href=
+          <?php if($_SERVER['HTTP_HOST'] == 'roc09090.classweb.ccv.edu'){
+            echo "http://roc09090.classweb.ccv.edu/eCommerce/";
+          }else{
+            echo "http://wh963069.ispot.cc/projects/eCommerce/index.php";
+          }?>>Check this project out!</a> <br>
         <a href="https://github.com/roc2246/eCommerceMockup">Source Code</a> 
       </p>
     </div>
