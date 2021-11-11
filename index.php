@@ -68,7 +68,12 @@
         <img class="shortest-project-image" src="images/projects/reCRUD.png" alt="Real Estate App">
         A web application that consumes a self-coded real esate api. CRUD 
         features are used to manage the listings.<br><br>
-        <a href="http://roc09090.classweb.ccv.edu/real_estate/">Check this project out!</a> <br>
+        <a href=
+          <?php if($_SERVER['HTTP_HOST'] == 'roc09090.classweb.ccv.edu'){
+            echo "http://roc09090.classweb.ccv.edu/real_estate/";
+          }else{
+            echo "http://wh963069.ispot.cc/projects/real_estate/index.php";
+          }?>>Check this project out!</a> <br>
         <a href="https://github.com/roc2246/real_estate">Source Code</a> 
       </p>
     </div>
