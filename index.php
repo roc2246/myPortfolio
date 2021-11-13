@@ -19,7 +19,7 @@
   
   <!--About Me-->
   <div class="selected-option" id="aboutme" style="display: none;">
-    <h4>Your friendly Neighborhood Fullstack Developer</h4>
+    <h4>Your Friendly Neighborhood Fullstack Developer</h4>
     <div class="second-row">
       <img id="ec" src="images/euroCarve.jpg">
             <p class="paragraph-main scroll">I am a fullstack web developer located in beautiful Vermont. For over twenty years, I have spent most of my time 
