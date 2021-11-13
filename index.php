@@ -19,7 +19,7 @@
   
   <!--About Me-->
   <div class="selected-option" id="aboutme" style="display: none;">
-    <h4>Your friendly Neighborhood Fullstack Developer</h4>
+    <h4>Your Friendly Neighborhood Fullstack Developer</h4>
     <div class="second-row">
       <img id="ec" src="images/euroCarve.jpg">
             <p class="paragraph-main scroll">I am a fullstack web developer located in beautiful Vermont. For over twenty years, I have spent most of my time 
@@ -76,7 +76,7 @@
     <div class="project">
       <p class="paragraph-main">
         <img class="shortest-project-image" src="images/projects/reCRUD.png" alt="Real Estate App">
-        A web application that consumes a self-coded real esate api. CRUD 
+        A web application that consumes a self-coded real esate API. CRUD 
         features are used to manage the listings.<br><br>
         <a href=
           <?php if($_SERVER['HTTP_HOST'] == 'roc09090.classweb.ccv.edu'){
