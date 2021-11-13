@@ -144,8 +144,6 @@
   function toggleOption (k, os1, os2, os3){
     
     if(option[k].style.display == 'none'){
-      //Line below is for changing URL on nav click
-      //window.history.pushState('', 'New Page Title', '/new-url.php');
       document.getElementById("main-space").setAttribute("style", "display: none;");
      
       option[k].removeAttribute("style");
