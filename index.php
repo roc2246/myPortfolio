@@ -2,7 +2,7 @@
 <?php include 'include/header.php';?>
 
 <main>
-  <h2 class = "fade-in">Make a selection, get to know me better</h2>
+  <h2 class = "fade-in">Make a selection, get to know me better.</h2>
   <nav>
     <ul style="list-style-type:none;">
       <li id="home-link"><a style="text-decoration: none;" href = "index.php">Home</a></li>
@@ -23,10 +23,9 @@
     <div class="second-row">
       <img id="ec" src="images/euroCarve.jpg">
             <p class="paragraph-main scroll">I am a fullstack web developer located in beautiful Vermont. For over twenty years, I have spent most of my time 
-              outside living the snowboarder life. Not only was I adventurous, but was also analytical as well. I always wanted to 
-              dissect and break down everything I encoutner in my path.  
+              outside living the snowboarder life. When off the slopes, I always wanted to dissect and break down everything I encoutner in my path.  
               <br><br>Ultimately, I turned to web development to satisfy this need. It all started when I began customizing my MySpace page with custom
-              made HTML and CSS. Eventually, that lead to me taking more classes in web development, further solidifying my developer skills. 
+              HTML and CSS made designs. Eventually, that lead to me taking more classes in web development, further solidifying my developer skills. 
               Since then, web development and coding became some of the biggest passions in my life.
             </p> 
     </div>
