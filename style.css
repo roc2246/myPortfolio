@@ -273,7 +273,7 @@ form{
   }
   
   input[type=email], input[type=textbox] {
-    height: 20px;
+    height: 30px;
   }
   
   textarea{
