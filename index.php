@@ -1,15 +1,33 @@
-<?php $pageTitle = "Fullstack Developer";?>
-<?php include 'include/header.php';?>
+<?php 
+/** 
+ * Riley Childs's Web Development Portfolio
+ * 
+ * PHP version 7.4
+ * 
+ * @category Main_Pages
+ * @package  Pages
+ * @author   Riley Childs <riley.childs@yahoo.com>
+ * @license  Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+ * @link     http://wh963069.ispot.cc/index.php
+ */
+$pageTitle = "Fullstack Developer";
+require 'include/header.php';
+?>
 
 <main>
   <h2 class = "fade-in">Make a selection, get to know me better.</h2>
   <nav>
     <ul style="list-style-type:none;">
-      <li id="home-link"><a style="text-decoration: none;" href = "index.php">Home</a></li>
-      <li style="cursor: pointer;" onclick="toggleOption(0, 1, 2, 3);">About Me</li>
-      <li style="cursor: pointer;" onclick="toggleOption(1, 0, 2, 3);">Areas of Expertise</li>
-      <li style="cursor: pointer;" onclick="toggleOption(2, 0, 1, 3);">Projects</li>
-      <li style="cursor: pointer;" onclick="toggleOption(3, 0, 1, 2);">Contact Me</li>
+      <li id="home-link"><a style="text-decoration: none;" 
+      href = "index.php">Home</a></li>
+      <li style="cursor: pointer;" 
+      onclick="toggleOption(0, 1, 2, 3);">About Me</li>
+      <li style="cursor: pointer;" 
+      onclick="toggleOption(1, 0, 2, 3);">Areas of Expertise</li>
+      <li style="cursor: pointer;" 
+      onclick="toggleOption(2, 0, 1, 3);">Projects</li>
+      <li style="cursor: pointer;" 
+      onclick="toggleOption(3, 0, 1, 2);">Contact Me</li>
     </ul>
   </nav>
   <div id="main-space">
@@ -22,11 +40,17 @@
     <h4>Your Friendly Neighborhood Fullstack Developer</h4>
     <div class="second-row">
       <img id="ec" src="images/euroCarve.jpg">
-            <p class="paragraph-main scroll">I am a fullstack web developer located in beautiful Vermont. For over twenty years, I have spent most of my time 
-              outside living the snowboarder life. When off the slopes, I always wanted to dissect and break down everything I encoutner in my path.  
-              <br><br>Ultimately, I turned to web development to satisfy this need. It all started when I began customizing my MySpace page with custom
-              HTML and CSS made designs. Eventually, that lead to me taking more classes in web development, further solidifying my developer skills. 
-              Since then, web development and coding became some of the biggest passions in my life.
+            <p class="paragraph-main scroll">I am a fullstack web developer 
+              located in beautiful Vermont. For over twenty years,
+               I have spent most of my time outside living the snowboarder life.
+                When off the slopes, I always wanted to dissect and break down 
+                everything I encoutner in my path.  
+              <br><br>Ultimately, I turned to web development to satisfy this need.
+              It all started when I began customizing my MySpace page with custom
+              HTML and CSS made designs. Eventually, that lead to me taking more 
+              classes in web development, further solidifying my developer skills. 
+              Since then, web development and coding became some of the biggest 
+              passions in my life.
             </p> 
     </div>
   </div>
@@ -34,11 +58,11 @@
   <!--Areas of Expertise-->
   <!--Image sources: https://devicon.dev/-->
   <div class="selected-option"  id="areas-of-expertise" style="display: none;">
-    <img class="language" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg" />
-    <img class="language" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg" />
-    <img class="language" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" />
-    <img class="language" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" />
-    <img class="language" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-plain.svg" />
+    <img class="language" src="https://tinyurl.com/6huwm662" />
+    <img class="language" src="https://tinyurl.com/y2pu9scw" />
+    <img class="language" src="https://tinyurl.com/ktbnbrrp" />
+    <img class="language" src="https://tinyurl.com/2prwet54" />
+    <img class="language" src="https://tinyurl.com/bxxsy6jp" />
 
   </div>
 
@@ -51,38 +75,47 @@
         are pages for each resort, a randomnly-generated movie of the week, an 
         AJAX powered quiz, and much more.<br><br>
         <a href=
-        <?php if($_SERVER['HTTP_HOST'] == 'roc09090.classweb.ccv.edu'){
-            echo "http://roc09090.classweb.ccv.edu/intro_to_prog/FinalProject/index.php";
-          }else{
+        <?php 
+        if ($_SERVER['HTTP_HOST'] == 'roc09090.classweb.ccv.edu') {
+            echo 
+            "http://roc09090.classweb.ccv.edu/intro_to_prog/FinalProject/index.php";
+        } else {
             echo "http://wh963069.ispot.cc/projects/after3/index.php";
-          }?>>Check this project out!</a> <br>
+        }
+        ?>>Check this project out!</a> <br>
         <a href="https://github.com/roc2246/after3">Source Code</a> 
       </p>
     </div>
     <div class="project">
       <p class="paragraph-main">
-        <img class="project-image" src="images/projects/theCondo.png" alt="The Condo">
+        <img class="project-image" src="images/projects/theCondo.png" 
+        alt="The Condo">
         An eCommerce site that sells snowboarding softgoods and hardgoods.<br><br>
         <a href=
-          <?php if($_SERVER['HTTP_HOST'] == 'roc09090.classweb.ccv.edu'){
+        <?php 
+        if ($_SERVER['HTTP_HOST'] == 'roc09090.classweb.ccv.edu') {
             echo "http://roc09090.classweb.ccv.edu/eCommerce/";
-          }else{
+        } else {
             echo "http://wh963069.ispot.cc/projects/eCommerce/index.php";
-          }?>>Check this project out!</a> <br>
+        }
+        ?>>Check this project out!</a> <br>
         <a href="https://github.com/roc2246/eCommerceMockup">Source Code</a> 
       </p>
     </div>
     <div class="project">
       <p class="paragraph-main">
-        <img class="shortest-project-image" src="images/projects/reCRUD.png" alt="Real Estate App">
+        <img class="shortest-project-image" src="images/projects/reCRUD.png" 
+        alt="Real Estate App">
         A web application that consumes a self-coded real esate API. CRUD 
         features are used to manage the listings.<br><br>
         <a href=
-          <?php if($_SERVER['HTTP_HOST'] == 'roc09090.classweb.ccv.edu'){
-            echo "http://roc09090.classweb.ccv.edu/real_estate/";
-          }else{
-            echo "http://wh963069.ispot.cc/projects/real_estate/index.php";
-          }?>>Check this project out!</a> <br>
+          <?php 
+            if ($_SERVER['HTTP_HOST'] == 'roc09090.classweb.ccv.edu') {
+                echo "http://roc09090.classweb.ccv.edu/real_estate/";
+            } else {
+                echo "http://wh963069.ispot.cc/projects/real_estate/index.php";
+            }
+            ?>>Check this project out!</a> <br>
         <a href="https://github.com/roc2246/real_estate">Source Code</a> 
       </p>
     </div>
@@ -103,10 +136,11 @@
           <br>
           <textarea rows="15" cols="45" name="message"></textarea>
           <br>
-          <button type="submit" value="Submit" name="submit" onclick="submitForm(contact, 'index.php')">Submit</button>
+          <button type="submit" value="Submit" name="submit" 
+          onclick="submitForm(contact, 'index.php')">Submit</button>
           <h4 id="sendMssg"></h4>
-          <?php 
-              if(isset($_POST['submit'])){
+            <?php 
+            if (isset($_POST['submit'])) {
                 $email = $_POST['email'];
                 $subject = $_POST['subject'];
                 $msg = $_POST['message']; 
@@ -117,8 +151,8 @@
           
                 mail($mailTo, $subject, $msg, $headers);
                 echo "<script>alert('Email has been sent');</script>";
-              }
-          ?>
+            }
+            ?>
         </form>
       <script src = "validate.js"></script>
       </div>
@@ -128,8 +162,12 @@
       </div>
     </div>
     <div class="row justify-content-center">
-      <a href="http://www.linkedin.com/in/riley-childs-4b015b1a4"><img src="images/socialMedia/linkedIn.png" alt="LinkedIn"></a>
-      <a href="https://github.com/roc2246"><img src="images/socialMedia/gitHub.png" alt="gitHub"></a>
+      <a href="http://www.linkedin.com/in/riley-childs-4b015b1a4">
+        <img src="images/socialMedia/linkedIn.png" alt="LinkedIn">
+      </a>
+      <a href="https://github.com/roc2246">
+        <img src="images/socialMedia/gitHub.png" alt="gitHub">
+      </a>
   </div>
 </div>
 </div>
@@ -139,6 +177,7 @@
 <script>
   const option = document.getElementsByClassName("selected-option");
   const navItem = document.getElementsByTagName("li");
+  const unselectStyle = "cursor: pointer; background-color: none;";
 
   function toggleOption (k, os1, os2, os3){
     
@@ -151,9 +190,9 @@
       option[os3].setAttribute("style", "display: none;");
 
       navItem[k+1].setAttribute("style", "cursor: pointer; background-color: grey;");
-      navItem[os1+1].setAttribute("style", "cursor: pointer; background-color: none;");
-      navItem[os2+1].setAttribute("style", "cursor: pointer; background-color: none;");
-      navItem[os3+1].setAttribute("style", "cursor: pointer; background-color: none;");
+      navItem[os1+1].setAttribute("style", unselectStyle);
+      navItem[os2+1].setAttribute("style", unselectStyle);
+      navItem[os3+1].setAttribute("style", unselectStyle);
     }
   }
 
@@ -166,10 +205,14 @@
   //Keeps both #home-link and <a> child element highlighted on mouse hover
   const homeLink = document.getElementById("home-link");
   const homeLinkChild = document.getElementsByTagName("a")[0];
-  homeLink.addEventListener("mouseover", () => homeLinkChild.style.backgroundColor = "grey");
-  homeLink.addEventListener("mouseleave", () => homeLinkChild.style.backgroundColor = "");
+  homeLink.addEventListener("mouseover", () => {
+  homeLinkChild.style.backgroundColor = "grey"
+  });
+  homeLink.addEventListener("mouseleave", () => {
+  homeLinkChild.style.backgroundColor = ""
+  });
   
   
 </script>
 
-<?php include "include/footer.php"?>
+<?php require "include/footer.php"?>
