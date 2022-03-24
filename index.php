@@ -18,25 +18,24 @@ require 'include/header.php';
   <h2 class = "fade-in">Make a selection, get to know me better.</h2>
   <nav>
     <ul style="list-style-type:none;">
-      <li id="home-link"><a style="text-decoration: none;" 
-      href = "index.php">Home</a></li>
+      <li style="cursor: pointer;"
+      onclick="toggleOption(0);">Home</li>
       <li style="cursor: pointer;" 
-      onclick="toggleOption(0, 1, 2, 3);">About Me</li>
+      onclick="toggleOption(1);">About Me</li>
       <li style="cursor: pointer;" 
-      onclick="toggleOption(1, 0, 2, 3);">Areas of Expertise</li>
+      onclick="toggleOption(2);">Areas of Expertise</li>
       <li style="cursor: pointer;" 
-      onclick="toggleOption(2, 0, 1, 3);">Projects</li>
+      onclick="toggleOption(3);">Projects</li>
       <li style="cursor: pointer;" 
-      onclick="toggleOption(3, 0, 1, 2);">Contact Me</li>
+      onclick="toggleOption(4);">Contact Me</li>
     </ul>
   </nav>
-  <div id="main-space">
-    <!--The nav selections will be displayed here, replacing the h4 tag below-->
+  <div class="selected-option" id="intro">
     <h4 class = "fade-in">What would you like to know about me?</h4>
   </div>
   
   <!--About Me-->
-  <div class="selected-option" id="aboutme" style="display: none;">
+  <div class="selected-option" id="aboutme">
     <h4>Your Friendly Neighborhood Fullstack Developer</h4>
     <div class="second-row">
       <img id="ec" src="images/euroCarve.jpg">
@@ -57,17 +56,16 @@ require 'include/header.php';
 
   <!--Areas of Expertise-->
   <!--Image sources: https://devicon.dev/-->
-  <div class="selected-option"  id="areas-of-expertise" style="display: none;">
+  <div class="selected-option"  id="areas-of-expertise">
     <img class="language" src="https://tinyurl.com/6huwm662" />
     <img class="language" src="https://tinyurl.com/y2pu9scw" />
     <img class="language" src="https://tinyurl.com/ktbnbrrp" />
     <img class="language" src="https://tinyurl.com/2prwet54" />
     <img class="language" src="https://tinyurl.com/bxxsy6jp" />
-
   </div>
 
   <!--Projects-->
-  <div class="selected-option"  id="projects" style="display: none;">
+  <div class="selected-option"  id="projects">
     <div class="project">
       <p class="paragraph-main">
       <img class="project-image" src="images/projects/after3.png" alt="After 3">  
@@ -122,7 +120,7 @@ require 'include/header.php';
   </div>
 
   <!--Contact Me-->
-  <div class="selected-option"  style="display: none;">
+  <div class="selected-option">
     <div class="container-fluid">
       <div class="row justify-content-center">
         <form name="contact" method="post">
@@ -174,45 +172,6 @@ require 'include/header.php';
 
 </main>
 
-<script>
-  const option = document.getElementsByClassName("selected-option");
-  const navItem = document.getElementsByTagName("li");
-  const unselectStyle = "cursor: pointer; background-color: none;";
-
-  function toggleOption (k, os1, os2, os3){
-    
-    if(option[k].style.display == 'none'){
-      document.getElementById("main-space").setAttribute("style", "display: none;");
-     
-      option[k].removeAttribute("style");
-      option[os1].setAttribute("style", "display: none;");
-      option[os2].setAttribute("style", "display: none;");
-      option[os3].setAttribute("style", "display: none;");
-
-      navItem[k+1].setAttribute("style", "cursor: pointer; background-color: grey;");
-      navItem[os1+1].setAttribute("style", unselectStyle);
-      navItem[os2+1].setAttribute("style", unselectStyle);
-      navItem[os3+1].setAttribute("style", unselectStyle);
-    }
-  }
-
-  
-  //Prevents A new listing from being created upon submission
-    if (window.history.replaceState) {
-      window.history.replaceState( null, null, window.location.href );
-    }
-
-  //Keeps both #home-link and <a> child element highlighted on mouse hover
-  const homeLink = document.getElementById("home-link");
-  const homeLinkChild = document.getElementsByTagName("a")[0];
-  homeLink.addEventListener("mouseover", () => {
-  homeLinkChild.style.backgroundColor = "grey"
-  });
-  homeLink.addEventListener("mouseleave", () => {
-  homeLinkChild.style.backgroundColor = ""
-  });
-  
-  
-</script>
+<script src = "script.js"></script>
 
 <?php require "include/footer.php"?>
