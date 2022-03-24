@@ -97,7 +97,7 @@ require 'include/header.php';
     </div>
     <div class="project">
       <p class="paragraph-main">
-        <img class="shortest-project-image" src="images/projects/reCRUD.png" 
+        <img class="project-image" src="images/projects/reCRUD.png" 
         alt="Real Estate App">
         A web application that consumes a self-coded real esate API. CRUD 
         features are used to manage the listings.<br><br>
