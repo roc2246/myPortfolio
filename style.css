@@ -150,6 +150,7 @@ li{
   display: inline;
   margin-left: 20px;
   user-select: none;
+  cursor: pointer;
 }
 
 li:hover{

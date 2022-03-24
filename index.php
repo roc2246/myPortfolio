@@ -18,16 +18,11 @@ require 'include/header.php';
   <h2 class = "fade-in">Make a selection, get to know me better.</h2>
   <nav>
     <ul style="list-style-type:none;">
-      <li style="cursor: pointer;"
-      onclick="toggleOption(0);">Home</li>
-      <li style="cursor: pointer;" 
-      onclick="toggleOption(1);">About Me</li>
-      <li style="cursor: pointer;" 
-      onclick="toggleOption(2);">Areas of Expertise</li>
-      <li style="cursor: pointer;" 
-      onclick="toggleOption(3);">Projects</li>
-      <li style="cursor: pointer;" 
-      onclick="toggleOption(4);">Contact Me</li>
+      <li onclick="toggleOption(0);">Home</li>
+      <li onclick="toggleOption(1);">About Me</li>
+      <li onclick="toggleOption(2);">Areas of Expertise</li>
+      <li onclick="toggleOption(3);">Projects</li>
+      <li onclick="toggleOption(4);">Contact Me</li>
     </ul>
   </nav>
   <div class="selected-option" id="intro">
