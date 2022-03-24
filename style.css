@@ -230,6 +230,51 @@ li:hover{
   margin-bottom: 10px;
 }
 
+/*Contact Me*/
+form{
+ width: 100%;
+  }
+  
+label{
+  font-family: helvetica, arial, serif;
+}
+
+input[type=email], input[type=textbox] {
+  height: 30px;
+}
+
+textarea{
+  height: 125px;
+}
+
+input[type=email], input[type=textbox], textarea {
+  
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  
+}
+
+input[type=submit] {
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form > h4{
+  width: 50%;
+}
+
+.container {
+  padding: 20px;
+}
+
 /*footer*/
 footer {
   border-top: solid;
@@ -246,85 +291,40 @@ footer {
   position: absolute;
 }
 
-
-form{
- width: 100%;
-  }
-  
-  label{
-    font-family: helvetica, arial, serif;
-  }
-  
-  input[type=email], input[type=textbox] {
-    height: 30px;
-  }
-  
-  textarea{
-    height: 125px;
-  }
-  
-  input[type=email], input[type=textbox], textarea {
-    
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-   
-  }
-  
-  input[type=submit] {
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  form > h4{
-    width: 50%;
-  }
-  
-  .container {
-    padding: 20px;
+/*Mobile*/
+@media only screen and (max-width: 414px){
+  .paragraph-main, .project-image, #ec{
+    margin-left:auto;
+    margin-right:auto;
   }
 
-  /*Mobile*/
-  @media only screen and (max-width: 414px){
-    .paragraph-main, .project-image, #ec{
-      margin-left:auto;
-      margin-right:auto;
-    }
-
-    #aboutme>h4{
-      text-align: center;
-    }
-
-    .project-image, #ec{
-      margin-bottom: 5px;
-    }
-
-    .selected-option{
-      display: flex;
-      flex-direction: column;
-      margin-top: 20px;
-    }
-
-  
-    .second-row{
-      display: flex;
-      flex-direction: column;
+  #aboutme>h4{
+    text-align: center;
   }
 
-  .project{
+  .project-image, #ec{
+    margin-bottom: 5px;
+  }
+
+  .selected-option{
     display: flex;
     flex-direction: column;
+    margin-top: 20px;
   }
 
-  form{
-    width: 75%;
-     }
 
-  }
+  .second-row{
+    display: flex;
+    flex-direction: column;
+}
+
+.project{
+  display: flex;
+  flex-direction: column;
+}
+
+form{
+  width: 75%;
+    }
+
+}
