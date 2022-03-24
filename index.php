@@ -17,7 +17,7 @@ require 'include/header.php';
 <main>
   <h2 class = "fade-in">Make a selection, get to know me better.</h2>
   <nav>
-    <ul style="list-style-type:none;">
+    <ul>
       <li onclick="toggleOption(0);">Home</li>
       <li onclick="toggleOption(1);">About Me</li>
       <li onclick="toggleOption(2);">Areas of Expertise</li>
