@@ -17,12 +17,12 @@ require 'include/header.php';
 <main>
   <h2 class = "fade-in">Make a selection, get to know me better.</h2>
   <nav>
-    <ul>
-      <li onclick="toggleOption(0);">Home</li>
-      <li onclick="toggleOption(1);">About Me</li>
-      <li onclick="toggleOption(2);">Areas of Expertise</li>
-      <li onclick="toggleOption(3);">Projects</li>
-      <li onclick="toggleOption(4);">Contact Me</li>
+    <ul id="selections">
+      <li onclick = "newOption(1)">Home</li>
+      <li onclick = "newOption(2)">About Me</li>
+      <li onclick = "newOption(3)">Areas of Expertise</li>
+      <li onclick = "newOption(4)">Projects</li>
+      <li onclick = "newOption(5)">Contact Me</li>
     </ul>
   </nav>
   <div class="selected-option" id="intro">

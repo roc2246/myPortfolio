@@ -1,31 +1,24 @@
-const option = document.getElementsByClassName("selected-option");
-  const navItem = document.getElementsByTagName("li");
-  const unselectStyle = "cursor: pointer; background-color: none;";
+// ESLint Exceptions
+/* eslint-disable no-return-assign */
+/* eslint-disable no-unused-vars */
 
-  Object.keys(option).forEach(opt => option[opt].style.display = "none");
+// Navigation
+let optNo = 1;
 
-  function toggleOption (){
+function viewOptions(opt) {
+  const option = document.getElementsByClassName('selected-option');
 
-      navItem[k+1].setAttribute("style", "cursor: pointer; background-color: grey;");
-      navItem[os1+1].setAttribute("style", unselectStyle);
-      navItem[os2+1].setAttribute("style", unselectStyle);
-      navItem[os3+1].setAttribute("style", unselectStyle);
-  }
+  Object.keys(option).forEach((item) => option[item].style.display = 'none');
+  option[optNo - 1].style.display = 'block';
+}
 
-  
-  //Prevents A new listing from being created upon submission
-    if (window.history.replaceState) {
-      window.history.replaceState( null, null, window.location.href );
-    }
+function newOption(opt) {
+  viewOptions(optNo = opt);
+}
 
-  //Keeps both #home-link and <a> child element highlighted on mouse hover
-  const homeLink = document.getElementById("home-link");
-  const homeLinkChild = document.getElementsByTagName("a")[0];
-  homeLink.addEventListener("mouseover", () => {
-  homeLinkChild.style.backgroundColor = "grey"
-  });
-  homeLink.addEventListener("mouseleave", () => {
-  homeLinkChild.style.backgroundColor = ""
-  });
-  
-  
+viewOptions(optNo);
+
+// Prevents A new listing from being created upon submission
+if (window.history.replaceState) {
+  window.history.replaceState(null, null, window.location.href);
+}
