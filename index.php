@@ -16,6 +16,8 @@ require 'include/header.php';
 
 <main>
   <h2 class = "fade-in">Make a selection, get to know me better.</h2>
+
+  <!--Navigation-->
   <?php require 'include/navigation.php';?>
 
   <!--OPTIONS-->
@@ -29,7 +31,7 @@ require 'include/header.php';
   <div class="selected-option">
     <h4>Your Friendly Neighborhood Fullstack Developer</h4>
     <div class="about-me-second-row">
-      <img id="ec" src="images/euroCarve.jpg">
+      <img id="ec" src="images/euroCarve.jpg" alt="euroCarve">
             <p class="paragraph-main scroll">I am a fullstack web developer 
               located in beautiful Vermont. For over twenty years,
                I have spent most of my time outside living the snowboarder life.
@@ -48,11 +50,11 @@ require 'include/header.php';
   <!--Areas of Expertise-->
   <!--Image sources: https://devicon.dev/-->
   <div class="selected-option">
-    <img class="language" src="https://tinyurl.com/6huwm662" />
-    <img class="language" src="https://tinyurl.com/y2pu9scw" />
-    <img class="language" src="https://tinyurl.com/ktbnbrrp" />
-    <img class="language" src="https://tinyurl.com/2prwet54" />
-    <img class="language" src="https://tinyurl.com/bxxsy6jp" />
+    <img class="language" src="https://tinyurl.com/6huwm662" alt="HTML 5"/>
+    <img class="language" src="https://tinyurl.com/y2pu9scw" alt="CSS 3"/>
+    <img class="language" src="https://tinyurl.com/ktbnbrrp" alt="JavaScript"/>
+    <img class="language" src="https://tinyurl.com/2prwet54" alt="MySQL"/>
+    <img class="language" src="https://tinyurl.com/bxxsy6jp" alt="PHP"/>
   </div>
 
   <!--Projects-->
@@ -110,8 +112,10 @@ require 'include/header.php';
       <button type="submit" value="Submit" name="submit" 
           onclick="submitForm(contact, 'index.php')">Submit</button>
       <h4 id="sendMssg"></h4>
+      <!--PHP Code to Send Email-->
       <?php require 'include/sendEmail.php';?>
     </form>
+    <!--Form Validation-->
     <script src = "validate.js"></script>
     <!--Social Media Links-->
     <h4>Social Media</h4>
