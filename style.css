@@ -100,17 +100,16 @@ a:hover {
 
 
 /*Main Content*/
-h2, #main-space>h4 {
-    font-family: helvetica, arial, sans-serif;
-    font-weight: lighter;
-
-    text-align: center;
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 h2, h4 {
   font-family: helvetica, arial, sans-serif;
   font-weight: lighter;
-
+  text-align: center;
 }
 
 .paragraph-main{
@@ -118,26 +117,16 @@ h2, h4 {
   text-align: left;
   background-color: #030324;
   border-style: inset;
-  margin-left: 10px;
   padding: 5px;
 }
 
-main{
-  display: flex;
-  flex-direction: column;
-  justify-content:center;
-
-  padding-top: 20px;
-}
-
-
 .selected-option{
+  display: block;
+
   margin-left: auto;
   margin-right: auto;
-  margin-top: 20px;
-  min-width: 200px;
-  max-width: 1000px;
   min-height: 650px;
+  max-width: 1000px;
 }
 
 /*Navigation*/
@@ -158,6 +147,7 @@ ul{
 }
 
 li{
+  font-family: Arial, Helvetica, sans-serif;
   display: inline;
   margin-left: 20px;
   user-select: none;
@@ -196,8 +186,16 @@ li:hover{
 }
 
 /*Projects*/
+#project-flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
 .project{
   width: 240px;
+  margin: 20px;
 }
 
 .project-image{
@@ -251,10 +249,6 @@ form > h4{
   width: 50%;
 }
 
-.container {
-  padding: 20px;
-}
-
 /*footer*/
 footer {
   border-top: solid;
@@ -266,7 +260,7 @@ footer {
 
 
 #copyright{
-  font-family: helvetica;
+  font-family: Arial, Helvetica, sans-serif;
   width: 100%;
   position: absolute;
 }
@@ -282,6 +276,12 @@ footer {
     text-align: center;
   }
 
+  
+  .about-me-second-row{
+    display: flex;
+    flex-direction: column;
+  }
+
   .project-image, #ec{
     margin-bottom: 5px;
   }
@@ -292,19 +292,12 @@ footer {
     margin-top: 20px;
   }
 
-
-  .second-row{
+  .project{
     display: flex;
     flex-direction: column;
-}
+  }
 
-.project{
-  display: flex;
-  flex-direction: column;
-}
-
-form{
-  width: 75%;
-    }
-
+  form{
+    width: 75%;
+  }
 }
