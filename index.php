@@ -96,44 +96,32 @@ require 'include/header.php';
 
   <!--Contact Me-->
   <div class="selected-option">
-        <form name="contact" method="post">
-          <label for="email">Email</label>
-          <input type="email" name="email">
-          <br>
-          <label for="subject">Subject</label>
-          <input type="textbox" name="subject">
-          <br>
-          <label for="message">Message</label>
-          <br>
-          <textarea rows="15" cols="45" name="message"></textarea>
-          <br>
-          <button type="submit" value="Submit" name="submit" 
+    <form name="contact" method="post">
+      <!--Email-->
+      <label for="email">Email</label>
+      <input type="email" name="email"><br>
+      <!--Subject-->
+      <label for="subject">Subject</label>
+      <input type="textbox" name="subject"><br>
+      <!--Message-->
+      <label for="message">Message</label><br>
+      <textarea rows="15" cols="45" name="message"></textarea><br>
+      <!--Submit Button-->
+      <button type="submit" value="Submit" name="submit" 
           onclick="submitForm(contact, 'index.php')">Submit</button>
-          <h4 id="sendMssg"></h4>
-            <?php 
-            if (isset($_POST['submit'])) {
-                $email = $_POST['email'];
-                $subject = $_POST['subject'];
-                $msg = $_POST['message']; 
-                $msg = wordwrap($msg, 70);    
-
-                $mailTo = "riley.childs@yahoo.com";
-                $headers = "From: ". $email . "\r\n";
-          
-                mail($mailTo, $subject, $msg, $headers);
-                echo "<script>alert('Email has been sent');</script>";
-            }
-            ?>
-        </form>
-      <script src = "validate.js"></script>
-        <h4>Social Media</h4>
+      <h4 id="sendMssg"></h4>
+      <?php require 'include/sendEmail.php';?>
+    </form>
+    <script src = "validate.js"></script>
+    <!--Social Media Links-->
+    <h4>Social Media</h4>
       <a href="http://www.linkedin.com/in/riley-childs-4b015b1a4">
         <img src="images/socialMedia/linkedIn.png" alt="LinkedIn">
       </a>
       <a href="https://github.com/roc2246">
         <img src="images/socialMedia/gitHub.png" alt="gitHub">
       </a>
-</div>
+  </div>
 
 </main>
 
