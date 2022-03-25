@@ -21,14 +21,14 @@ require 'include/header.php';
   <!--OPTIONS-->
 
   <!--Intro-->
-  <div class="selected-option" id="intro">
+  <div class="selected-option">
     <h4 class = "fade-in">What would you like to know about me?</h4>
   </div>
   
   <!--About Me-->
-  <div class="selected-option" id="aboutme">
+  <div class="selected-option">
     <h4>Your Friendly Neighborhood Fullstack Developer</h4>
-    <div class="second-row">
+    <div class="about-me-second-row">
       <img id="ec" src="images/euroCarve.jpg">
             <p class="paragraph-main scroll">I am a fullstack web developer 
               located in beautiful Vermont. For over twenty years,
@@ -47,7 +47,7 @@ require 'include/header.php';
 
   <!--Areas of Expertise-->
   <!--Image sources: https://devicon.dev/-->
-  <div class="selected-option"  id="areas-of-expertise">
+  <div class="selected-option">
     <img class="language" src="https://tinyurl.com/6huwm662" />
     <img class="language" src="https://tinyurl.com/y2pu9scw" />
     <img class="language" src="https://tinyurl.com/ktbnbrrp" />
@@ -56,7 +56,7 @@ require 'include/header.php';
   </div>
 
   <!--Projects-->
-  <div class="selected-option"  id="projects">
+  <div class="selected-option">
     <div class="project">
       <p class="paragraph-main">
       <img class="project-image" src="images/projects/after3.png" alt="After 3">  
@@ -96,8 +96,6 @@ require 'include/header.php';
 
   <!--Contact Me-->
   <div class="selected-option">
-    <div class="container-fluid">
-      <div class="row justify-content-center">
         <form name="contact" method="post">
           <label for="email">Email</label>
           <input type="email" name="email">
@@ -128,21 +126,13 @@ require 'include/header.php';
             ?>
         </form>
       <script src = "validate.js"></script>
-      </div>
-    <div class="row justify-content-center">  
-      <div class="page-header">
         <h4>Social Media</h4>
-      </div>
-    </div>
-    <div class="row justify-content-center">
       <a href="http://www.linkedin.com/in/riley-childs-4b015b1a4">
         <img src="images/socialMedia/linkedIn.png" alt="LinkedIn">
       </a>
       <a href="https://github.com/roc2246">
         <img src="images/socialMedia/gitHub.png" alt="gitHub">
       </a>
-  </div>
-</div>
 </div>
 
 </main>
