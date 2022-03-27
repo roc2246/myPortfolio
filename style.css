@@ -70,7 +70,6 @@ h2, .selected-option>h4 {
 
 .selected-option{
   display: block;
-
   margin-left: auto;
   margin-right: auto;
   min-height: 650px;
@@ -85,7 +84,6 @@ nav{
 
 ul{
   list-style-type:none;
-
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -118,6 +116,8 @@ li:hover{
 .about-me-second-row{
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 #ec{
@@ -209,7 +209,6 @@ footer {
   border-top: solid;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 10px;
   width: 100%;
 }
 
@@ -217,5 +216,7 @@ footer {
 #copyright{
   font-family: Arial, Helvetica, sans-serif;
   width: 100%;
+  margin: 10px;
+  padding-bottom: 10px;
   position: absolute;
 }
