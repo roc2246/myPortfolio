@@ -39,6 +39,13 @@ a {
     color: silver;
 }
 
+/*Scrollbar*/
+.scroll{
+  overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
 a:hover {
 	color: whitesmoke;
 }
@@ -103,23 +110,15 @@ li:hover{
   background-color: grey;
 }
 
-/*Scrollbar*/
-.scroll{
-  overflow: scroll;
-  overflow-x: hidden;
-  overflow-y: hidden;
-}
-
-
 /*About Me*/
-.about-me-second-row{
+.about-me-row{
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
 
-#ec{
+.about-me-image{
   width: 240px;
   height: 143px;
   border-style: inset;
@@ -178,7 +177,6 @@ textarea{
 }
 
 input[type=email], input[type=textbox], textarea {
-  
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;

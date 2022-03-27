@@ -30,8 +30,8 @@ require 'include/header.php';
   <!--About Me-->
   <div class="selected-option">
     <h4>Your Friendly Neighborhood Fullstack Developer</h4>
-    <div class="about-me-second-row">
-      <img id="ec" src="images/euroCarve.jpg" alt="euroCarve">
+    <div class="about-me-row">
+      <img class="about-me-image" src="images/euroCarve.jpg" alt="euroCarve">
             <p class="paragraph-main scroll">I am a fullstack web developer 
               located in beautiful Vermont. For over twenty years,
                I have spent most of my time outside living the snowboarder life.
