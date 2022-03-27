@@ -4,6 +4,7 @@ body{
 	font-size: 14pt;
 }
 
+
 /*Site Header*/
 header{
   border-bottom: solid;
@@ -29,6 +30,7 @@ header > h4 {
   	margin-top: 0px;
 }
 
+
 /*Links*/
 a {
     display: inline-block;
@@ -38,6 +40,7 @@ a {
     text-decoration: none;
     color: silver;
 }
+
 
 /*Scrollbar*/
 .scroll{
@@ -49,6 +52,7 @@ a {
 a:hover {
 	color: whitesmoke;
 }
+
 
 /*Main Content*/
 main{
@@ -82,6 +86,7 @@ h2, .selected-option>h4 {
   max-width: 1000px;
 }
 
+
 /*Navigation*/
 nav{
   margin-left:auto;
@@ -110,6 +115,7 @@ li:hover{
   background-color: grey;
 }
 
+
 /*About Me*/
 .about-me-row{
   display: flex;
@@ -136,6 +142,7 @@ li:hover{
   margin: 8px;
 }
 
+
 /*Projects*/
 #project-flex-container {
   display: flex;
@@ -158,6 +165,7 @@ li:hover{
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
 
 /*Contact Me*/
 form{
@@ -184,7 +192,6 @@ input[type=email], input[type=textbox], textarea {
   box-sizing: border-box;
   margin-top: 6px;
   margin-bottom: 16px;
-  
 }
 
 input[type=submit] {
@@ -213,7 +220,6 @@ footer {
   margin-right: auto;
   width: 100%;
 }
-
 
 #copyright{
   font-family: Arial, Helvetica, sans-serif;
