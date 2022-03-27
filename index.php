@@ -15,8 +15,6 @@ require 'include/header.php';
 ?>
 
 <main>
-  <h2 class = "fade-in">Make a selection, get to know me better.</h2>
-
   <!--Navigation-->
   <?php require 'include/navigation.php';?>
 
