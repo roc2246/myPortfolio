@@ -26,6 +26,6 @@
 </head>
 <body>
 <header>
-<h1>Riley Childs</h1>
-<h4>Essential Web Solutions</h4>
+    <h1>Riley Childs</h1>
+    <h4>Essential Web Solutions</h4>
 </header>
