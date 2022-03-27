@@ -50,11 +50,13 @@ require 'include/header.php';
   <!--Areas of Expertise-->
   <!--Image sources: https://devicon.dev/-->
   <div class="selected-option">
-    <img class="language" src="https://tinyurl.com/6huwm662" alt="HTML 5"/>
-    <img class="language" src="https://tinyurl.com/y2pu9scw" alt="CSS 3"/>
-    <img class="language" src="https://tinyurl.com/ktbnbrrp" alt="JavaScript"/>
-    <img class="language" src="https://tinyurl.com/2prwet54" alt="MySQL"/>
-    <img class="language" src="https://tinyurl.com/bxxsy6jp" alt="PHP"/>
+    <div id="areas-of-expertise">
+      <img class="language" src="https://tinyurl.com/6huwm662" alt="HTML 5"/>
+      <img class="language" src="https://tinyurl.com/y2pu9scw" alt="CSS 3"/>
+      <img class="language" src="https://tinyurl.com/ktbnbrrp" alt="JavaScript"/>
+      <img class="language" src="https://tinyurl.com/2prwet54" alt="MySQL"/>
+      <img class="language" src="https://tinyurl.com/bxxsy6jp" alt="PHP"/>
+    </div>  
   </div>
 
   <!--Projects-->
