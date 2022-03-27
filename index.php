@@ -120,13 +120,17 @@ require 'include/header.php';
     <!--Form Validation-->
     <script src = "validate.js"></script>
     <!--Social Media Links-->
-    <h4>Social Media</h4>
-      <a href="http://www.linkedin.com/in/riley-childs-4b015b1a4">
-        <img src="images/socialMedia/linkedIn.png" alt="LinkedIn">
-      </a>
-      <a href="https://github.com/roc2246">
-        <img src="images/socialMedia/gitHub.png" alt="gitHub">
-      </a>
+    <div id="social-media">
+      <h4>Social Media</h4>
+        <div id="SM-icons">
+          <a href="http://www.linkedin.com/in/riley-childs-4b015b1a4">
+            <img src="images/socialMedia/linkedIn.png" alt="LinkedIn">
+          </a>
+          <a href="https://github.com/roc2246">
+            <img src="images/socialMedia/gitHub.png" alt="gitHub">
+         </a>
+      </div>
+    </div>
   </div>
 
 </main>
