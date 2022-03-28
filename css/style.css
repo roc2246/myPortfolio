@@ -200,6 +200,10 @@ button[type=submit] {
   cursor: pointer;
 }
 
+button[type=submit]:active {
+  border-color: rgb(182, 182, 6);
+}
+
 form > h4{
   width: 50%;
 }
