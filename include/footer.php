@@ -13,7 +13,7 @@
 ?>
 
     <footer>
-        <p id="copyright">Copyright 2021</p>
+        <p>Copyright 2021</p>
     </footer>
   </body>
 </html>

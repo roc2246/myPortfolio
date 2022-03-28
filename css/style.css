@@ -11,7 +11,7 @@ header{
 }
 
 header > h1, header > h4 {
-  font-family: Helvetica, arial serif;
+  font-family: Helvetica, arial, serif;
   font-weight: lighter;
   margin: 10px;
 }
@@ -36,6 +36,10 @@ a {
     color: silver;
 }
 
+a:hover {
+	color: whitesmoke;
+}
+
 
 /*Scrollbar*/
 .scroll{
@@ -43,11 +47,6 @@ a {
   overflow-x: hidden;
   overflow-y: hidden;
 }
-
-a:hover {
-	color: whitesmoke;
-}
-
 
 /*Main Content*/
 main{
@@ -77,7 +76,7 @@ h2, .selected-option>h4 {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  min-height: 650px;
+  min-height: 775px;
   max-width: 1000px;
 }
 
@@ -211,13 +210,9 @@ form > h4{
 /*footer*/
 footer {
   border-top: solid;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  margin-bottom: auto;
 }
 
-#copyright{
+footer > p{
   font-family: Arial, Helvetica, sans-serif;
   margin: 10px;
 }
