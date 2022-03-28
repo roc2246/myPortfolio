@@ -103,13 +103,13 @@ require 'include/header.php';
     <form name="contact" method="post">
       <!--Email-->
       <label for="email">Email</label>
-      <input type="email" name="email"><br>
+      <input type="email" name="email" id="email"><br>
       <!--Subject-->
       <label for="subject">Subject</label>
-      <input type="textbox" name="subject"><br>
+      <input type="text" name="subject" id="subject"><br>
       <!--Message-->
       <label for="message">Message</label><br>
-      <textarea rows="15" cols="45" name="message"></textarea><br>
+      <textarea rows="15" cols="45" name="message" id="message"></textarea><br>
       <!--Submit Button-->
       <button type="submit" value="Submit" name="submit" 
           onclick="submitForm(contact, 'index.php')">Send Message</button>

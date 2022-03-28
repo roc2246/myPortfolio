@@ -170,7 +170,7 @@ label{
   font-family: helvetica, arial, serif;
 }
 
-input[type=email], input[type=textbox] {
+input[type=email], input[type=text] {
   height: 30px;
 }
 
@@ -178,7 +178,7 @@ textarea{
   height: 125px;
 }
 
-input[type=email], input[type=textbox], textarea {
+input[type=email], input[type=text], textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
