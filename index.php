@@ -112,7 +112,7 @@ require 'include/header.php';
       <textarea rows="15" cols="45" name="message"></textarea><br>
       <!--Submit Button-->
       <button type="submit" value="Submit" name="submit" 
-          onclick="submitForm(contact, 'index.php')">Submit</button>
+          onclick="submitForm(contact, 'index.php')">Send Message</button>
       <h4 id="sendMssg"></h4>
       <!--PHP Code to Send Email-->
       <?php require 'include/sendEmail.php';?>
