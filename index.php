@@ -27,7 +27,7 @@ require 'include/header.php';
   
   <!--About Me-->
   <div class="selected-option">
-    <h4>Your Friendly Neighborhood Fullstack Developer</h4>
+    <h2>Your Friendly Neighborhood Fullstack Developer</h2>
     <div class="about-me-row">
       <img class="about-me-image" src="images/euroCarve.jpg" alt="euroCarve">
             <p class="paragraph-main scroll">I am a fullstack web developer 
