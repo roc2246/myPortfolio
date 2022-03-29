@@ -118,7 +118,7 @@ require 'include/header.php';
       <?php require 'include/sendEmail.php';?>
     </form>
     <!--Form Validation-->
-    <script src = "validate.js"></script>
+    <script src = "script/validate.js"></script>
     <!--Social Media Links-->
     <div id="social-media">
       <h4>Social Media</h4>
@@ -135,6 +135,6 @@ require 'include/header.php';
 
 </main>
 
-<script src = "script.js"></script>
+<script src = "script/script.js"></script>
 
 <?php require "include/footer.php"?>
