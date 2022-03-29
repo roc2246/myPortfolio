@@ -22,7 +22,7 @@ require 'include/header.php';
 
   <!--Intro-->
   <div class="selected-option">
-    <h4 class = "fade-in">What would you like to know about me?</h4>
+    <h2 class = "fade-in">What would you like to know about me?</h2>
   </div>
   
   <!--About Me-->
